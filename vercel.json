@@ -1,0 +1,25 @@
+{
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install --legacy-peer-deps",
+  "outputDirectory": "dist/client",
+  "framework": "vite",
+  "nodeVersion": "18.x",
+  "env": {
+    "VITE_API_URL": "/UJ"
+  },
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/UJ(.*)",
+      "destination": "/UJ/index.html",
+      "statusCode": 200
+    }
+  ]
+}
