@@ -1,6 +1,7 @@
 [build]
-  command = "npm run build"
+  command = "npm install --legacy-peer-deps && npm run build"
   publish = "dist/client"
+  node_version = "18.17.0"
 
 # Client-side routing: rewrite unknown paths to the SPA shell (assets are served first)
 [[redirects]]
